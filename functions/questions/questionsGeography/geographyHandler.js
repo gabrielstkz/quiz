@@ -33,11 +33,8 @@ async function geography() {
     await askQuestion(questions[i], i + 1);
   }
 
-  // Exibe a pontuação do usuário
-  console.log(chalk.bgGreen.black(` Sua pontuação foi de ${points} pontos `));
-
   if (points === 70) {
-    console.log(chalk.bgGreen.black(` Parabéns, você obteve a pontuação máxima! `));
+    console.log(chalk.bgGreen.black(` Parabéns, você obteve a pontuação máxima de ${points}! `));
   } else {
     console.log(chalk.bgGreen.black(` Parabén, sua pontuação foi de ${points} pontos `));
   }
